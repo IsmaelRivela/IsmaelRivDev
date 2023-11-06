@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+img, picture, video, iframe, figure {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+li {
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+
+    
+}
+
+h1, h2 {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+    overflow: visible;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: black;
+}
+
+
+.main{
+    width: 100%;
+    /* max-width: 100rem; */
+    height: 100vh;
+    background-color: black;
+
+    /* margin: auto; */
+    display: flex;
+    flex-flow: row wrap;
+
+    position: relative;
+    
+}
+
+.main__container{
+    width: 50%;
+    height: 50vh;
+    background-color: red;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    transition: width 0.5s ease,
+                height 0.5s ease,
+                opacity 0.5s ease;
+
+    /* border: 3px solid rgb(38, 0, 255); */
+    position: relative;
+}
+
+.container__img{
+    width: 100%;
+    opacity: 1 ;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+
+    pointer-events: none;
+
+    transition: opacity 1s ease;
+}
+
+.container__video{
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+
+    transition: opacity 1.5s ease;
+}
+.bep{
+    background-color: rgb(240, 240, 140);
+    position: absolute;
+    inset: 0 auto auto 0 ;
+}
+.bep__container{
+    width: 35%;
+}
+
+.gta{
+    background-color: black;
+    position: absolute;
+    inset: 0 0 auto auto ;
+}
+.gta__container{
+    width: 35%;
+}
+
+
+.kaneda{
+    background-color: red;
+    position: absolute;
+    inset: auto auto 0 0;
+
+    /* transform-origin: bottom left;
+    background-image: url(../assets/kaneda__gif.gif);
+    background-size: cover; */
+}
+.kaneda__container{
+    width: 35%;
+}
+.kaneda__bg{
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+
+    position: absolute;
+    z-index: 1;
+
+    transform-origin: bottom left;
+    background-image: url(../assets/kaneda__gif.gif);
+    background-size: cover;
+}
+.kaneda:hover .kaneda__bg{
+    opacity: 1;
+}
+
+
+.tarot{
+    background-color: purple;
+    position: absolute;
+    inset: auto 0 0 auto;
+}
+.tarot__container{
+    width: 40%;
+}
+
+.isBig{
+    width: 60% ;
+    height: 60vh ;
+}
+.is40_60{
+    width: 40%;
+    height: 60vh;
+}
+.is60_40{
+    width: 60%;
+    height: 40vh;
+}
+.isSmall{
+    width: 40%;
+    height: 40vh;
+}
+.isClicked{
+    width : 100%;
+    height : 100vh;
+    z-index: 4;
+}
+
+.isFaded{
+    opacity:0;
+}
+
+.isVisible{
+    opacity: 1;
+}
+
+@media (max-width: 1000px){
+    .bep__container{
+        width: 80%;
+    }
+    .gta__container{
+        width: 80%;
+    }
+    .kaneda__container{
+        width: 80%;
+    }
+    .tarot__container{
+        width: 80%;
+    }
+}
