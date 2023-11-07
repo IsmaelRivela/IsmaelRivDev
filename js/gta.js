@@ -1,12 +1,19 @@
 `use strict`
 
+// body opacity
+const bodyHtlm = document.querySelector(`body`)
+
+setTimeout(()=>{
+    bodyHtlm.classList.add(`isVisible`)
+} , 500)
+
+
 // header desplegable
 
 const headerLogo = document.querySelector(`.header__img`)
 const headerNav  = document.querySelector(`.header__nav`)
 const mainBody   = document.querySelector(`.main`)
 const headerLi   = document.querySelectorAll(`.header__li`)
-
 
 
 let hideNav = ()=>{
