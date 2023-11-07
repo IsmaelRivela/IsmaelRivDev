@@ -1,11 +1,14 @@
 `use strict`
 
 // body opacity
-const bodyHtlm = document.querySelector(`body`)
+const bodyOpacity = document.querySelector(`.transitionOpacity`)
 
-setTimeout(()=>{
-    bodyHtlm.classList.add(`isVisible`)
+bodyOpacity.addEventListener(`DOMContentLoaded`,()=>{
+    setTimeout(()=>{
+    bodyOpacity.classList.add(`isHidden`)
 } , 500)
+})
+
 
 
 // header desplegable
