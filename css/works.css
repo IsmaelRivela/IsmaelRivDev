@@ -207,7 +207,7 @@ body{
     }
 }
 
-@media (max-width: 550px){
+@media (max-width: 900px){
     .bep__container{
         width: 60%;
     }
