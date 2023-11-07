@@ -194,30 +194,21 @@ body{
 
 @media (max-width: 1000px){
     .bep__container{
-        width: 80%;
+        width: 60%;
     }
     .gta__container{
-        width: 80%;
+        width: 60%;
     }
     .kaneda__container{
-        width: 80%;
+        width: 60%;
     }
     .tarot__container{
-        width: 80%;
+        width: 60%;
     }
 }
 
-@media (max-width: 900px){
-    .bep__container{
-        width: 60%;
-    }
-    .gta__container{
-        width: 60%;
-    }
-    .kaneda__container{
-        width: 60%;
-    }
-    .tarot__container{
-        width: 60%;
+@media (max-width: 550px){
+    .main{
+        height: 100svh;
     }
 }
