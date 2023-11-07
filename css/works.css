@@ -74,13 +74,22 @@ body{
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    
+    filter: grayscale(1);
 
     transition: width 0.5s ease,
                 height 0.5s ease,
-                opacity 0.5s ease;
+                opacity 0.5s ease,
+                filter 0.5s ease;
 
     /* border: 3px solid rgb(38, 0, 255); */
     position: relative;
+
+    
+}
+
+.main__container:hover{
+    filter: grayscale(0);
 }
 
 .container__img{
@@ -204,6 +213,9 @@ body{
     }
     .tarot__container{
         width: 45%;
+    }
+    .main__container{
+        filter: grayscale(0);
     }
 }
 
