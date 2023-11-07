@@ -206,3 +206,18 @@ body{
         width: 80%;
     }
 }
+
+@media (max-width: 550px){
+    .bep__container{
+        width: 60%;
+    }
+    .gta__container{
+        width: 60%;
+    }
+    .kaneda__container{
+        width: 60%;
+    }
+    .tarot__container{
+        width: 60%;
+    }
+}
