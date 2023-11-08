@@ -154,7 +154,7 @@ body{
     z-index: 1;
 
     transform-origin: bottom left;
-    background-image: url(../assets/kaneda__gif.gif);
+    background-image: url(../assets/works__assets/kaneda__gif.gif);
     background-size: cover;
 }
 .kaneda:hover .kaneda__bg{
