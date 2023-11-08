@@ -96,7 +96,7 @@ body{
 }
 
 .header{
-    width: calc(100% / 3) ;
+    width: calc(100% / 4) ;
     /* background-color: lightblue; */
 
     position: fixed;
@@ -189,7 +189,7 @@ body{
     object-fit: cover;
 }
 .main{
-    width: calc(100% / 3);
+    width: calc(100% / 2);
     min-height: 100vh;
 
     position: relative;
@@ -279,6 +279,7 @@ body{
 .main__maps{
     width: 100% ;
     background-color: lightcoral;
+    filter: sepia(1);
 }
 
 .main__coupons{
@@ -295,7 +296,7 @@ body{
 }
 
 .footer{
-    width: calc(100% / 3);
+    width: calc(100% / 4);
     min-height: 25vh;
     background-color: rgb(138, 33, 33);
     

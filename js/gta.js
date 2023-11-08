@@ -1,14 +1,16 @@
 `use strict`
 
 // body opacity
+
 const bodyOpacity = document.querySelector(`.transitionOpacity`)
 
-bodyOpacity.addEventListener(`DOMContentLoaded`,()=>{
-    setTimeout(()=>{
+let opacityHandler = ()=>{
     bodyOpacity.classList.add(`isHidden`)
-} , 500)
-})
+}
 
+document.addEventListener(`DOMContentLoaded`,()=>{
+    setTimeout( opacityHandler , 500)
+})
 
 
 // header desplegable
