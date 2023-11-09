@@ -144,6 +144,9 @@ body{
 .kaneda__container{
     width: 35%;
 }
+.red{
+    background-color: red;
+}
 .kaneda__bg{
     width: 100%;
     height: 100%;
@@ -154,8 +157,8 @@ body{
     z-index: 1;
 
     transform-origin: bottom left;
-    background-image: url(../assets/works__assets/kaneda__gif.gif);
-    background-size: cover;
+    /* background-image: url(../assets/works__assets/kaneda__gif.gif);
+    background-size: cover; */
 }
 .kaneda:hover .kaneda__bg{
     opacity: 1;

@@ -65,22 +65,10 @@ mainContainer.forEach((eachContainer , index)=>{
     
 })
 
+
+
 mainContainer.forEach((eachContainer , i)=>{
-    if(i === 2 ){
-        mainContainer[2].addEventListener(`click`, e=>{
-        
-            e.preventDefault()
-            setTimeout(()=>{
-                (logoContainer[i].classList.add(`isFaded`))
-            } , 1000)
-
-            setTimeout(()=>{
-                window.location.href = mainContainer[2].getAttribute(`href`)
-            }, 1000)
-
-        })
-      
-    }else{
+    
        mainContainer[i].addEventListener(`click`, (e)=>{
         
         e.preventDefault()
@@ -104,7 +92,7 @@ mainContainer.forEach((eachContainer , i)=>{
             window.location.href = mainContainer[i].getAttribute(`href`)
         })
     }) 
-    }
+    
     
 })
 

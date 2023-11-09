@@ -4,9 +4,11 @@
 const fakeImg = document.querySelector(`.main__img`)
 const errorGlitch = document.querySelector(`.main__glitch`)
 const glitchEffect = document.querySelector(`.glitch__effect`)
+const pageWrapper = document.querySelector(`.page__wrapper`)
 
 console.log(fakeImg)
 console.log(errorGlitch)
+
 
 let fakeImgOpacity = ()=>{
     fakeImg.classList.add(`isActive`)
@@ -17,6 +19,7 @@ let errorGlitchAddOpacity = ()=>{
 }
 
 let errorGlitchRemoveOpacity = ()=>{
+    pageWrapper.style.display = `block`
     errorGlitch.classList.remove(`isActive`)
     glitchEffect.style.display = `none`
 }

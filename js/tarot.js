@@ -3,12 +3,20 @@
 const videoCortinilla = document.querySelector(`.main__video`)
 const mainSite = document.querySelector(`.main`)
 
+let videoEnd = ()=>{
+    videoCortinilla.style.display = `none`
+}
+let videoPlay = ()=>{
+    videoCortinilla.play()
+    videoCortinilla.addEventListener(`ended`, videoEnd )
+}
 
-videoCortinilla.play()
+window.addEventListener(`DOMContentLoaded`, videoPlay)
 
 setTimeout(()=>{
     mainSite.classList.add(`isVisible`)
-}, 1000)
+}, 100)
+
 // background change
 
 const backgroundContainer = document.querySelector(`.bg__container`)
@@ -85,7 +93,7 @@ let mouseMovePositivo = ()=>{
         
 
         mainWrapper.classList.remove(`isTransition`)
-        // mainWrapper.classList.remove(`isFinal`)
+        
         
     }
 }
@@ -143,7 +151,6 @@ mainWrapper.addEventListener('touchend', (e) => {
 
   if (Math.abs(touchDiff) > 20) {
     let delta = touchDiff > 0 ? 1 : -1;
-    // sectionContador += delta;
 
     console.log(delta)
 
