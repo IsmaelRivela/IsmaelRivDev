@@ -134,6 +134,7 @@ body{
 }
 .h1__a{
     width: 70%;
+    max-width: 20rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
