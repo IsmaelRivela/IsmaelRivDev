@@ -117,8 +117,14 @@ body{
     position: absolute;
     inset: auto calc(50%-1rem) calc(50%-1rem) auto;
     z-index: 2;
+
+    transition: font-variation-settings 0.5s ease;
 }
 
+.back__link:hover{
+    color: red;
+    font-variation-settings: "LINE" 100, "FILL" 90;
+}
 /* ------------------------ BEP ------------------------- */
 .bep{
     background-color: lightgoldenrodyellow;
