@@ -205,7 +205,7 @@ body{
     }
 }
 
-@media (max-width: 570px){
+@media (max-width: 700px){
     .h1__wrapper{
         display: flex;
         flex-flow: row nowrap;
@@ -235,6 +235,7 @@ body{
     .main__h3{
         font-size: 2rem;
     }
+
     .main__animation{
         font-size: 3rem;
     }
