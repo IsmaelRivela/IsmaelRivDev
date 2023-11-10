@@ -624,7 +624,7 @@ body{
     .hero__wrapper{
         grid-auto-rows: 10vh;
     }     
-    .main_6_hero{
+    .main__hero{
         width: 100%;
         /* height: 80vh; */
         overflow: hidden;
