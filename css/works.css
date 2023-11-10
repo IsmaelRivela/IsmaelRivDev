@@ -109,8 +109,14 @@ body{
 .back__link{
     padding: 1rem 2rem;
     background-color: black;
+
     font-size: 2rem;
     color: white;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 
     position: absolute;
     inset: auto calc(50%-1rem) calc(50%-1rem) auto;
