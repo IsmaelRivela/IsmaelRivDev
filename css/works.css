@@ -53,7 +53,7 @@ body{
 .main{
     width: 100%;
     height: 100vh;
-    
+
     position: relative;
 }
 
@@ -116,12 +116,14 @@ body{
     inset: auto calc(50%-1rem) calc(50%-1rem) auto;
     z-index: 2;
 
-    transition: font-variation-settings 0.5s ease;
+    transition: font-variation-settings 0.5s ease,
+                scale                   0.5s ease;
 }
 
 .back__link:hover{
     color: red;
     font-variation-settings: "LINE" 100, "FILL" 90;
+    transform: scale(1.5);
 }
 /* ------------------------ BEP ------------------------- */
 .bep{
