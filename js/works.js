@@ -83,5 +83,3 @@ mainContainer.forEach((eachContainer , i)=>{
         }, 500)
     })
 })
-
-
