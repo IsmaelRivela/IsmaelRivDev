@@ -110,7 +110,7 @@ body{
     position: absolute;
     pointer-events: none;
     opacity: 0;
-
+    
     transition: opacity 1.5s ease;
 }
 .bep{
@@ -131,7 +131,6 @@ body{
     width: 35%;
 }
 
-
 .kaneda{
     background-color: red;
     position: absolute;
@@ -147,23 +146,6 @@ body{
 .red{
     background-color: red;
 }
-.kaneda__bg{
-    width: 100%;
-    height: 100%;
-
-    opacity: 0;
-
-    position: absolute;
-    z-index: 1;
-
-    transform-origin: bottom left;
-    /* background-image: url(../assets/works__assets/kaneda__gif.gif);
-    background-size: cover; */
-}
-.kaneda:hover .kaneda__bg{
-    opacity: 1;
-}
-
 
 .tarot{
     background-color: purple;

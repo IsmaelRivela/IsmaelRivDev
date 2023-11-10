@@ -80,8 +80,8 @@ mainContainer.forEach((eachContainer , i)=>{
         mainContainer[i].classList.add(`isClicked`)
 
         setTimeout(() => {
-            videoContainer.forEach((eachVideo , j)=>{
-                videoContainer[j].classList.add(`isVisible`)
+            videoContainer.forEach((eachVideo , i)=>{
+                videoContainer[i].classList.add(`isVisible`)
             })
             videoContainer[i].play()
 
