@@ -205,7 +205,7 @@ body{
     }
 }
 
-@media (max-width: 1100px){
+@media (max-width: 700px){
     .h1__wrapper{
         display: flex;
         flex-flow: row nowrap;
