@@ -617,10 +617,6 @@ body{
     
     }
     
-    .main{
-        /* gap: 0.5rem; */
-        
-    }
     .hero__wrapper{
         grid-auto-rows: 10vh;
     }     
@@ -648,5 +644,7 @@ body{
         font-size: 0.4rem;
     }
     
-
+    .black__text{
+        font-size: 1.5rem;
+    }
 }

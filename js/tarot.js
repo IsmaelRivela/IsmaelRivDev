@@ -5,6 +5,7 @@ const mainSite = document.querySelector(`.main`)
 
 let videoEnd = ()=>{
     videoCortinilla.style.display = `none`
+    mainSite.classList.add(`isVisible`)
 }
 let videoPlay = ()=>{
     videoCortinilla.play()
@@ -13,9 +14,9 @@ let videoPlay = ()=>{
 
 window.addEventListener(`DOMContentLoaded`, videoPlay)
 
-setTimeout(()=>{
-    mainSite.classList.add(`isVisible`)
-}, 100)
+// setTimeout(()=>{
+//     mainSite.classList.add(`isVisible`)
+// }, 100)
 
 // background change
 
