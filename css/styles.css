@@ -211,7 +211,7 @@ body{
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     .main__h2{
         font-size: 8rem;
