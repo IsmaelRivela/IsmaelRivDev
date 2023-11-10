@@ -1,9 +1,7 @@
 `use strict`
 
-
 const mainContainer = document.querySelectorAll (`.main__container`)
-const logoContainer = document.querySelectorAll (`.container__img`)
-const videoContainer = document.querySelectorAll(`.container__video`)
+
 
 console.log(mainContainer)
 
@@ -65,36 +63,25 @@ mainContainer.forEach((eachContainer , index)=>{
     
 })
 
+// 
+
+const logoContainer = document.querySelectorAll (`.logo__container`)
+const videoContainer = document.querySelectorAll(`.container__video`)
 
 
 mainContainer.forEach((eachContainer , i)=>{
-    
-       mainContainer[i].addEventListener(`click`, (e)=>{
-        
+    mainContainer[i].addEventListener(`click` , (e)=>{
         e.preventDefault()
-
-        setTimeout(()=>{
-            (logoContainer[i].classList.add(`isFaded`))
-        } , 1000)
-        
         mainContainer[i].classList.add(`isClicked`)
-
-        setTimeout(() => {
-            videoContainer.forEach((eachVideo , i)=>{
-                videoContainer[i].classList.add(`isVisible`)
-            })
+        logoContainer[i].classList.add(`isHidden`)
+        setTimeout(()=>{
+            videoContainer[i].classList.add(`isVisible`)
             videoContainer[i].play()
-
-            console.log(videoContainer[i].duration*1000)
-        }, 2000);
-
-        videoContainer[i].addEventListener(`ended`, ()=>{
-            window.location.href = mainContainer[i].getAttribute(`href`)
-        })
-    }) 
-    
-    
+            videoContainer[i].addEventListener(`ended`, ()=>{
+                window.location.href = mainContainer[i].getAttribute(`href`) 
+            })
+        }, 500)
+    })
 })
-
 
 

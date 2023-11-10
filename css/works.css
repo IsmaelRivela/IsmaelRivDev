@@ -53,108 +53,104 @@ body{
 
 .main{
     width: 100%;
-    /* max-width: 100rem; */
     height: 100vh;
-    background-color: black;
+    background-color: lightcoral;
 
-    /* margin: auto; */
-    display: flex;
-    flex-flow: row wrap;
 
     position: relative;
-    
 }
 
 .main__container{
     width: 50%;
     height: 50vh;
-    background-color: red;
+    background-color: lightgoldenrodyellow;
+
+    position: absolute;
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    
+
     filter: grayscale(1);
 
-    transition: width 0.5s ease,
-                height 0.5s ease,
-                opacity 0.5s ease,
-                filter 0.5s ease;
-
-    /* border: 3px solid rgb(38, 0, 255); */
-    position: relative;
-
-    
+    transition: width   0.5s ease,
+                height  0.5s ease,
+                filter  0.5s ease;
 }
 
-.main__container:hover{
-    filter: grayscale(0);
-}
+.logo__container{
+    width: 40%;
+    /* height: 10rem; */
+    /* background-color: blue; */
 
-.container__img{
-    width: 100%;
-    opacity: 1 ;
-    object-fit: cover;
-    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 1;
+    transition: opacity 2s ease;
+
     z-index: 2;
-
-    pointer-events: none;
-
-    transition: opacity 1s ease;
+    position: relative;
 }
 
 .container__video{
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    pointer-events: none;
-    opacity: 0;
     
-    transition: opacity 1.5s ease;
-}
-.bep{
-    background-color: rgb(240, 240, 140);
+    height: 100%; 
+    /* background-color: brown; */
+    object-fit: cover;
+    opacity: 0;
+
+    transition: opacity 1s ease;
+
     position: absolute;
-    inset: 0 auto auto 0 ;
-}
-.bep__container{
-    width: 35%;
+    
 }
 
+.back__link{
+    padding: 1rem 2rem;
+    background-color: black;
+    font-size: 2rem;
+    color: white;
+
+    position: absolute;
+    inset: auto calc(50%-1rem) calc(50%-1rem) auto;
+    z-index: 2;
+}
+
+/* ------------------------ BEP ------------------------- */
+.bep{
+    background-color: lightgoldenrodyellow;
+    inset: 0 auto auto 0;
+    transform-origin: top left;
+}
+
+/* ------------------------ GTA ------------------------- */
 .gta{
     background-color: black;
-    position: absolute;
-    inset: 0 0 auto auto ;
-}
-.gta__container{
-    width: 35%;
+    inset: 0 0 auto auto;
+    transform-origin: top right;    
 }
 
+/* ------------------------ AKIRA ------------------------- */
 .kaneda{
     background-color: red;
-    position: absolute;
     inset: auto auto 0 0;
-
-    /* transform-origin: bottom left;
-    background-image: url(../assets/kaneda__gif.gif);
-    background-size: cover; */
-}
-.kaneda__container{
-    width: 35%;
-}
-.red{
-    background-color: red;
+    transform-origin: bottom left;
 }
 
+/* ------------------------ TAROT ------------------------- */
 .tarot{
     background-color: purple;
-    position: absolute;
     inset: auto 0 0 auto;
+    transform-origin: bottom right;    
 }
-.tarot__container{
-    width: 40%;
-}
+
+/* ------------------------------------------------------------ */
+
+
 
 .isBig{
     width: 60% ;
@@ -172,35 +168,25 @@ body{
     width: 40%;
     height: 40vh;
 }
+
 .isClicked{
     width : 100%;
     height : 100vh;
-    z-index: 4;
-    filter: grayscale(0);
+
+    z-index: 3;
 }
 
-.isFaded{
-    opacity:0;
+.isHidden{
+    opacity: 0;
 }
-
 .isVisible{
     opacity: 1;
 }
 
-@media (max-width: 1000px){
-    .bep__container{
-        width: 45%;
-    }
-    .gta__container{
-        width: 45%;
-    }
-    .kaneda__container{
-        width: 45%;
-    }
-    .tarot__container{
-        width: 45%;
-    }
-    .main__container{
+/* --------------------------Media Querys--------------------------- */
+
+@media (min-width: 550px){
+    .main__container:hover{
         filter: grayscale(0);
     }
 }
