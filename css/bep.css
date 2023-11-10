@@ -226,7 +226,6 @@ body{
 .main__menu{
     width: 100%;
     min-height: 50vh;
-    /* background-color: lightgreen; */
 
     position: relative;
 
@@ -241,6 +240,11 @@ body{
 
     overflow: hidden;
 
+}
+
+.main__menu:hover{
+    color:  rgb(240, 240, 140);
+    background-color: rgb(138, 33, 33);
 }
 
 .menu__h2{
