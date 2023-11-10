@@ -211,13 +211,13 @@ body{
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
-        font-size: 2rem;
+        font-size: 4rem;
     }
     .main__h2{
-        font-size: 4rem;
+        font-size: 8rem;
     }
     .main__h3{
-        font-size: 4rem;
+        font-size: 6rem;
     }
 }
 
