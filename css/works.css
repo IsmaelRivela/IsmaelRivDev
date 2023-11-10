@@ -46,7 +46,8 @@ svg {
 }
 
 body{
-    font-family: 'Oswald', sans-serif;
+    font-family: "luke-variable", sans-serif;
+    font-variation-settings: "LINE" 100, "FILL" 100;
 }
 
 .main{
