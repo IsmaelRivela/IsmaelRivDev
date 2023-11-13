@@ -12,7 +12,12 @@ let videoPlay = ()=>{
     videoCortinilla.addEventListener(`ended`, videoEnd )
 }
 
-window.addEventListener(`DOMContentLoaded`, videoPlay)
+// window.addEventListener(`DOMContentLoaded`, videoPlay)
+
+videoCortinilla.addEventListener('loadedmetadata', videoPlay)
+window.addEventListener('DOMContentLoaded', () => {
+    videoCortinilla.load();
+})
 
 // setTimeout(()=>{
 //     mainSite.classList.add(`isVisible`)
