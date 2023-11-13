@@ -83,5 +83,23 @@ let carrouselHandler = ()=>{
 
 setInterval(carrouselHandler , 3000);
 
+// cursor behaviour
 
+const cursorContainer = document.querySelector(`.cursor__container`)
+const cursorWhite     = document.querySelector(`.cursor__white`)
 
+window.addEventListener(`mousemove`, e=>{
+    let clientX = e.clientX
+    let clientY = e.clientY
+
+    cursorContainer.style.transform = `translate3d(${clientX - 48}px, ${clientY- 48}px, 0)`
+
+    window.addEventListener(`pointerdown`, ()=>{
+        cursorWhite.style.opacity = 0
+
+        window.addEventListener(`pointerup`, ()=>{
+            cursorWhite.style.opacity = 1
+        })
+    })
+    
+})

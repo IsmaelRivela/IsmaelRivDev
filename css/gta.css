@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
     text-decoration: none;
     color: inherit;
 
-    
+    cursor: none;   
 }
 
 /* h1, h2 {
@@ -52,6 +52,7 @@ body{
     background-color: black;
 
     min-height: 200vh;
+    cursor: none;
 }
 
 .transitionOpacity{
@@ -65,6 +66,17 @@ body{
     opacity: 1;
 
     transition: opacity 1s ease;
+}
+
+.cursor__container{
+    position: fixed;
+    width: 6rem;
+    z-index: 3;
+
+    pointer-events: none;
+}
+.cursor__white{
+    position: absolute;
 }
 
 .header{
