@@ -225,7 +225,7 @@
         </div>
         <div class="main__buy">
             <div class="buy__description">
-                <p class="description__title">Chuck Taylor Converse  Kaneda Ltd Edition</p>
+                <p class="description__title">Chuck Taylor Converse Kaneda Ltd Edition</p>
                 <p class="description__price">130.00</p>
                 <p class="description__text">Introducing the Kaneda-inspired Converse sneakers, a vibrant fusion of black, striking red, and crisp white. Paying homage to the iconic character from Akira, these shoes feature subtle yet striking details reminiscent of the cult film. Step into the future of style with this dynamic blend of classic design and cinematic flair.</p>
             </div>
@@ -237,8 +237,18 @@
             </div>
 
             <div class="buy__size">
-                <span class="size__span">Selecciona tu Size</span>
-                <button class="size__add">+</button>
+                <form class="buy__form">
+                    <label class="buy__label" for="size">Select your size</label>
+                    <select class="buy__select" name="size" id="size">
+                        <option class="buy__option" value="36">36</option>
+                        <option class="buy__option" value="38">38</option>
+                        <option class="buy__option" value="40">40</option>
+                        <option class="buy__option" value="42">42</option>
+                        <option class="buy__option" value="44">44</option>
+                        <option class="buy__option" value="46">46</option>
+                    </select>
+                    <input class="buy__submit" type="submit" name="add" id="cartAdd" value="Add to cart">
+                </form>
             </div>
         </div>
 

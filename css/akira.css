@@ -445,9 +445,37 @@ body{
 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 
+    color: black;
+
+    
+}
+.buy__form{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1rem;
+
+    color: red;
+}
+.buy__label{
+
+}
+.buy__select{
+
+}
+.buy__option{
+    color: red;
+}
+.buy__submit{
+
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
     
 }
 .buy__shoe{
