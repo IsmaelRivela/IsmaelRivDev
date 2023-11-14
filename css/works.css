@@ -196,7 +196,7 @@ body{
 
 /* --------------------------Media Querys--------------------------- */
 
-@media (min-width: 550px){
+@media (max-width: 550px){
     .main__container{
         filter: grayscale(0);
     }
