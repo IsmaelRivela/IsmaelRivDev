@@ -197,7 +197,7 @@ body{
 /* --------------------------Media Querys--------------------------- */
 
 @media (max-width: 550px){
-    .main__container{
+    .main__container:hover{
         filter: grayscale(0);
     }
 }
