@@ -439,6 +439,7 @@ body{
 .header__logo{
     width: 3rem;
     position: static;
+    inset: unset;
 }
 .header__nav{
     width: 100%;
@@ -523,6 +524,9 @@ body{
     }
     .platforms__platform{
         width: 3rem;
+    }
+    .cursor__container{
+        display: none;
     }
 }
 
