@@ -176,11 +176,8 @@ body{
     width: calc(100% /3);
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-}
-.header__back{
-
 }
 .header__nav{
     width: calc(100% / 3);
@@ -462,12 +459,7 @@ body{
 
     color: red;
 }
-.buy__label{
 
-}
-.buy__select{
-
-}
 .buy__option{
     color: red;
 }
@@ -476,7 +468,7 @@ body{
     background-color: black;
     color: white;
     padding: 1rem 2rem;
-    
+
 }
 .buy__shoe{
     width: 100%;

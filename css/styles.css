@@ -101,7 +101,7 @@ body{
     padding: 1rem 2rem;
 
     color: black;
-    font-size: 6rem;
+    font-size: 5.8rem;
     font-variation-settings: "LINE" 160, "FILL" 120;
 
     position: fixed;
@@ -112,6 +112,14 @@ body{
     font-size: 10rem;
     transition: font-variation-settings 0.5s ease,
                 color 0.2s ease-in-out;
+}
+.main__wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 2rem;
 }
 .main__h3{
     font-size: 7rem;
@@ -211,13 +219,17 @@ body{
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
     .main__h2{
-        font-size: 8rem;
+        font-size: 6rem;
     }
     .main__h3{
-        font-size: 6rem;
+        font-size: 4rem;
+    }
+
+    .main__wrapper{
+        flex-flow: column;
     }
 }
 
